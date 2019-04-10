@@ -1,0 +1,6 @@
+<div *ngFor='let recipe of recipes'>
+  <h1>{{ recipe.title }}</h1>
+  <div *ngFor='let item of recipe.items'>
+    <li>{{ item.name }} --- {{ item.amount }}</li>
+  </div>
+</div>
